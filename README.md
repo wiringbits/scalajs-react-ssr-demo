@@ -6,6 +6,7 @@ A Server-side rendering (SSR) demo for scalajs-react, based on https://blog.ship
 
 - [scala-cli](https://scala-cli.virtuslab.org) 1.0.1
 - GraalVM 17 (sdkman can pick it automatically)
+- Node (picked automatically by [nvm](https://github.com/nvm-sh/nvm))
 
 ## Run
 
