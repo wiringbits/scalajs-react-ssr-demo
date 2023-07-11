@@ -10,7 +10,7 @@ A Server-side rendering (SSR) demo for scalajs-react, based on https://blog.ship
 
 ## Run
 
-- Package sjs code: `scala-cli --power package WebPageJs.scala -o js/webpage.js`
+- Package sjs code: `scala-cli --power package WebPageJs.scala -o js/webpage.js -f`
 - Run server code: `scala-cli WebServerJvm.scala`
 
 ## Update react dependencies
@@ -25,7 +25,7 @@ npm install react-dom@^16.5.2
 Then, grab the minified js code:
 
 ```shell
-cp node_modules/react/umd/react.production.min.js js 
+cp node_modules/react/umd/react.production.min.js js
 cp node_modules/react-dom/umd/react-dom-server.browser.production.min.js js
 ```
 
