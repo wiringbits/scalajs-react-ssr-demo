@@ -27,11 +27,12 @@ object WebPageJs {
     import japgolly.scalajs.react.vdom.html_<^._
 
     def hello(input: String) = {
-      val component = ScalaComponent.builder[String]
+      val component = ScalaComponent
+        .builder[String]
         .render($ => <.div("Hello ", $.props))
-           .build
-            component(input)
-       }
+        .build
+      component(input)
+    }
   }
 
   def main(args: Array[String]): Unit =

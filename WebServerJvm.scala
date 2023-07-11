@@ -20,7 +20,7 @@ object WebServer {
   val setup: Expr[Unit] =
     ReactSsr.Setup(
       Expr.requireFileOnClasspath(s"react.production.min.js"),
-      Expr.requireFileOnClasspath(s"react-dom-server.browser.production.min.js"),
+      Expr.requireFileOnClasspath(s"react-dom-server.browser.production.min.js")
     )
 
   val renderMySpa: MySpaInputs => Expr[String] =
@@ -36,7 +36,7 @@ object WebServer {
     ctx.eval(expr)
   }
 
-  def main(args: Array[String]): Unit ={
+  def main(args: Array[String]): Unit = {
     println("Hello Jvm")
     val page = index(MySpaInputs("SSR"))
     println(page)
